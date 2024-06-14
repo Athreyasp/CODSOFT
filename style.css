@@ -1,6 +1,4 @@
-/* GENERAL */
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Pacifico&display=swap");
 
 * {
   margin: 0;
@@ -9,6 +7,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: white;
+  color: #2c3e50;
 }
 
 html {
@@ -16,7 +16,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: #2c3e50;
 }
 
 /* TRANSITION */
@@ -37,6 +37,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+  background-color: #1abc9c;
 }
 
 .nav-links {
@@ -48,18 +49,18 @@ nav {
 a {
   color: black;
   text-decoration: none;
-  text-decoration-color: white;
 }
 
 a:hover {
-  color: grey;
+  color: #f39c12;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
 }
 
 .logo {
   font-size: 2rem;
+  font-family: "Pacifico", cursive;
+  color: white;
 }
 
 .logo:hover {
@@ -89,8 +90,8 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
-  transition: all 0.3 ease-in-out;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links {
@@ -101,7 +102,7 @@ a:hover {
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links a {
@@ -109,9 +110,8 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: #1abc9c;
   text-decoration: none;
-  transition: all 0.3 ease-in-out;
 }
 
 .menu-links li {
@@ -132,18 +132,6 @@ a:hover {
 
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-.hamburger-icon span:first-child {
-  opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
 }
 
 /* SECTIONS */
@@ -197,6 +185,8 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  font-family: "Pacifico", cursive;
+  color: #e74c3c;
 }
 
 #socials-container {
@@ -211,6 +201,7 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  color: #1abc9c;
 }
 
 /* BUTTONS */
@@ -227,11 +218,14 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  color: white;
+  background-color: #1abc9c;
+  border: none;
 }
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: none;
 }
 
 .btn-color-1:hover,
@@ -239,22 +233,16 @@ section {
   cursor: pointer;
 }
 
-.btn-color-1,
-.btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
-}
-
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: #16a085;
 }
 
 .btn-color-2 {
-  background: none;
+  background: #f39c12;
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  background: #e67e22;
 }
 
 .btn-container {
@@ -298,8 +286,7 @@ section {
   flex: 1;
   background: white;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: 0.1rem solid rgb(163, 163, 163);
   text-align: center;
 }
 
@@ -351,6 +338,7 @@ article {
 
 article .icon {
   cursor: default;
+  color: #2ecc71;
 }
 
 /* PROJECTS SECTION */
@@ -372,12 +360,17 @@ article .icon {
 
 .project-title {
   margin: 1rem;
-  color: black;
+  color: #333333;
 }
 
 .project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+  color: white;
+  background-color: #e74c3c;
+  border: none;
+}
+
+.project-btn:hover {
+  background-color: #c0392b;
 }
 
 /* CONTACT */
@@ -393,9 +386,8 @@ article .icon {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
+  border: 0.1rem solid rgb(163, 163, 163);
+  background: white;
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -414,10 +406,15 @@ article .icon {
 
 .contact-icon {
   cursor: default;
+  color: #3498db;
+}
+.contacta{
+  color: gray;
 }
 
 .email-icon {
   height: 2.5rem;
+  color: #3498db;
 }
 
 /* FOOTER SECTION */
@@ -425,8 +422,11 @@ article .icon {
 footer {
   height: 26vh;
   margin: 0 1rem;
+  background-color: #1abc9c;
+  color: white;
 }
 
 footer p {
   text-align: center;
+  font-family: "Pacifico", cursive;
 }
